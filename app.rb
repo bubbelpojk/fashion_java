@@ -6,5 +6,5 @@ enable:sessions
 # GET routes
 
 get '/' do
-    erb(:start)
+    erb('index')
 end

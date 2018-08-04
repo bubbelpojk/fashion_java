@@ -1,0 +1,82 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+
+}
+
+#grid_container {
+    display: grid;
+    max-width: 1000px;
+    outline: 1px solid red;
+    margin: 40px auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "header header header header"
+    "nav nav nav nav"
+    "hero hero hero hero"
+    "art-1 art-2 art-2 art-3"
+    "art-1 art-4 art-5 art-5"
+    "gallery gallery gallery gallery"
+    "cta cta cta cta"
+    "footer footer footer footer";
+    grid-template-rows: 140px 60px 360px 180px 180px auto 80px 200px;
+}
+
+.header {
+    grid-area: header;
+    background: red;
+}
+
+.nav {
+    grid-area: nav;
+    background: orange;
+}
+
+.hero {
+    grid-area: hero;
+    background: hotpink;
+}
+
+.art-1 {
+    grid-area: art-1;
+    background: yellow;
+}
+
+.art-2 {
+    grid-area: art-2;
+    background: yellowgreen;
+}
+
+.art-3 {
+    grid-area: art-3;
+    background: orangered;
+}
+
+.art-4 {
+    grid-area: art-4;
+    background: olivedrab;
+}
+
+.art-5 {
+    grid-area: art-5;
+    background: lightyellow;
+}
+
+.gallery {
+    grid-area: gallery;
+    background: aqua;
+}
+
+.cta {
+    grid-area: cta;
+    background: bisque;
+}
+
+.footer {
+    grid-area: footer;
+    background: olive;
+}
+
